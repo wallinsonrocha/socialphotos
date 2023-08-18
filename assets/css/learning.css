@@ -5,8 +5,8 @@
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	gap: 100px 50px;
-	padding: 100px 50px;
+	padding: 5rem 0;
+	gap: 6rem;	
 }
 .container .card 
 {
@@ -21,10 +21,12 @@
 	box-shadow: 0 35px 80px rgba(0,0,0,0.15);
 	transition: 0.5s
 }
-.container .card:hover 
+
+.container .card:hover
 {
-	height: 320px;
+	height: 400px;
 }
+
 .container .card .imgBx
 {
 	position: absolute;
@@ -37,7 +39,6 @@
 {
 	top: -100px;
 	scale: 0.75;
-	box-shadow: 0 15px 45px rgba(0,0,0,0.2);
 }
 .container .card .imgBx img 
 {	
@@ -49,7 +50,7 @@
 	top: 252px;
 	width: 80%;
 	padding: 0 2rem;
-	height: 2rem;
+	height: 0;
 	overflow: hidden;
 	text-align: center;
 	transition: 0.5s;
@@ -57,7 +58,7 @@
 .container .card:hover .content 
 {
 	top: 130px;
-	height: 200px;
+	height: 250px;
 }
 .container .card .content h3 
 {

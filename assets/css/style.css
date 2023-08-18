@@ -23,7 +23,7 @@ h1 {
     font-family: 'Koulen', 'cursive';
 }
 
-a{
+a {
     display: block;
     box-sizing: border-box;
     text-align: center;
@@ -33,11 +33,11 @@ a{
     color: #fff;
 }
 
-a:hover{
+a:hover {
     background-color: #E063E0;
 }
 
-a:active{
+a:active {
     background-color: #851086;
 }
 
@@ -48,8 +48,8 @@ h3 {
     color: #fff;
 }
 
-body{
-    background-color: #DC21DC;    
+body {
+    background-color: #DC21DC;
 }
 
 /* Ultilities */
@@ -58,8 +58,33 @@ body{
     font-weight: 300;
 }
 
-.text-center{
+.text-center {
     text-align: center;
+}
+
+.content {
+    display: grid;
+    max-width: 330px;
+    margin: 0 auto;
+    gap: .3rem;
+}
+
+.content a {
+    margin-top: 2rem;
+}
+
+.fit_img {
+    object-fit: contain;
+}
+
+.fit_img2 {
+    object-fit: cover;
+    aspect-ratio: inherit;
+    transform: scale(1.5);
+}
+
+.bold {
+    font-weight: bold;
 }
 
 /* Home */
@@ -77,26 +102,19 @@ body{
     z-index: 2;
 }
 
-img{
+img {
     width: 100%;
     object-fit: cover;
-    aspect-ratio: 1/1;    
+    aspect-ratio: 1/1;
 }
 
-#neon{
+#neon {
     position: absolute;
     width: 500%;
     top: -155%;
     left: -300%;
     z-index: 1;
     animation: rotate 10s linear infinite;
-}
-
-.home__content{
-    display: grid;
-    max-width: 330px;
-    margin: 0 auto;
-    gap: .5rem;
 }
 
 #logo {
@@ -117,29 +135,125 @@ img{
     font-weight: bold;
 }
 
+/* Mockups */
+#mockups {
+    padding: 6rem 0;
+    background-image: url('../media/views-mockup.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    display: grid;
+    gap: 8rem
+}
+
+.mockups__content {
+    display: grid;
+    gap: 2rem;
+}
+
 /* Time is ending */
-#time-is-end{
+#time-is-end {
     display: grid;
     background-color: #FFD233;
     place-items: center;
 }
-#time-is-end h1{
+
+#time-is-end h1 {
     padding: 5rem 0;
     text-align: center;
 }
 
 /* Who is */
-#who-is h1{
+#who-is {
+    display: grid;
+    position: relative;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    background-image: url('../media/raissa-who-is.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#who-is h1 {
     font-weight: 400;
     font-family: 'Inter';
+}
+
+#who_img {
+    position: relative;
+}
+
+#who_img img {
+    position: relative;
+    z-index: 2;
+}
+
+.glow,
+.glow2 {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.glow {
+    top: 60%;
+    left: 30%;
+    background: linear-gradient(45deg, #FFD700, #FF69B4, #9400D3);
+    animation: glowAnimation 10s ease-in-out infinite;
+}
+
+.glow2 {
+    top: 50%;
+    left: 60%;
+    background: linear-gradient(45deg, #FF1493, #FF6347, #00FF7F);
+    animation: glowAnimation2 5s ease-in-out infinite;
 }
 
 /* Animation */
 @keyframes rotate {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
+
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
+}
+
+@keyframes glowAnimation {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 120px 100px #FFD700,
+            0 0 140px 120px #FF69B4,
+            0 0 160px 140px #9400D3;
+    }
+
+    50% {
+        box-shadow:
+            0 0 95px 75px #FFD700,
+            0 0 125px 95px #FF69B4,
+            0 0 105px 125px #9400D3;
+    }
+}
+
+@keyframes glowAnimation2 {
+
+    0%,
+    100% {
+        box-shadow:
+            0 0 120px 100px #FFD700,
+            0 0 140px 120px #FF69B4,
+            0 0 160px 140px #9400D3;
+    }
+
+    50% {
+        box-shadow:
+            0 0 95px 75px #FFD700,
+            0 0 125px 95px #FF69B4,
+            0 0 105px 125px #9400D3;
+    }
+}
