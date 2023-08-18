@@ -78,9 +78,7 @@ body {
 }
 
 .fit_img2 {
-    object-fit: cover;
-    aspect-ratio: inherit;
-    transform: scale(1.5);
+    height: 400px;
 }
 
 .bold {
@@ -181,13 +179,15 @@ img {
 }
 
 #who_img {
-    position: relative;
+    position: relative;    
 }
 
 #who_img img {
     position: relative;
-    z-index: 2;
+    z-index: 2; 
 }
+
+/* overflow-x: hidden; */
 
 .glow,
 .glow2 {
