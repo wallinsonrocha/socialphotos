@@ -1,0 +1,145 @@
+/* Importations */
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;700&display=swap');
+
+
+/* Initial configuration */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Koulen', 'cursive';
+}
+
+a{
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #BA09BB;
+    color: #fff;
+}
+
+a:hover{
+    background-color: #E063E0;
+}
+
+a:active{
+    background-color: #851086;
+}
+
+p,
+a,
+h3 {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+body{
+    background-color: #DC21DC;    
+}
+
+/* Ultilities */
+.small-font {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* Home */
+#home {
+    position: relative;
+    overflow: hidden;
+    background-image: url('../media/background.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+#initial-content {
+    display: grid;
+    position: relative;
+    z-index: 2;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;    
+}
+
+#neon{
+    position: absolute;
+    width: 500%;
+    top: -155%;
+    left: -300%;
+    z-index: 1;
+    animation: rotate 10s linear infinite;
+}
+
+.home__content{
+    display: grid;
+    max-width: 330px;
+    margin: 0 auto;
+    gap: .5rem;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+}
+
+#logo span {
+    color: #FFE34A;
+    font-family: 'Inter', sans-serif;
+}
+
+#logo span:nth-child(1) {
+    font-weight: 200;
+}
+
+#logo span:nth-child(2) {
+    font-weight: bold;
+}
+
+/* Time is ending */
+#time-is-end{
+    display: grid;
+    background-color: #FFD233;
+    place-items: center;
+}
+#time-is-end h1{
+    padding: 5rem 0;
+    text-align: center;
+}
+
+/* Who is */
+#who-is h1{
+    font-weight: 400;
+    font-family: 'Inter';
+}
+
+/* Animation */
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
