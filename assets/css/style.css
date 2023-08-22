@@ -28,6 +28,7 @@ a {
     box-sizing: border-box;
     text-align: center;
     width: 100%;
+    height: 3rem;
     padding: 0.75rem;
     background-color: #BA09BB;
     color: #fff;
@@ -95,9 +96,13 @@ body {
 }
 
 #initial-content {
-    display: grid;
     position: relative;
     z-index: 2;
+}
+
+#initial-content img{
+    margin: 0 auto;
+    max-width: 600px;
 }
 
 img {
@@ -133,6 +138,33 @@ img {
     font-weight: bold;
 }
 
+#elementEl{
+    height: 172px;
+}
+
+@media (min-width: 768px) {
+    #home{
+        padding: 5rem 0;
+        background-size: contain;
+    }
+
+    #initial-content{
+        display: flex;
+        padding-right: 5%;
+    }
+
+    #neon{
+        width: auto;
+        top: -1300px;
+        left: -1000px;
+    }
+}
+
+/* Learning */
+#learning {
+    padding-top: 2rem;
+}
+
 /* Mockups */
 #mockups {
     padding: 6rem 0;
@@ -150,6 +182,12 @@ img {
     gap: 2rem;
 }
 
+.mockups__content2 {
+    display: grid;
+    gap: 2rem;
+    margin: 0 auto;    
+}
+
 /* Time is ending */
 #time-is-end {
     display: grid;
@@ -161,6 +199,61 @@ img {
     padding: 5rem 0;
     text-align: center;
 }
+
+@media (min-width: 768px) {
+    #mockups img{
+        max-width: 524px;       
+    }
+
+    .mockups__content{
+        display: grid;
+        gap: 100px 195px;
+        position: relative;
+        margin: 0 auto;        
+        grid-template-areas: 
+        "start ."
+        ". end";
+    }
+
+    .mockups__content2 {
+        display: grid;
+        gap: 2rem;
+        margin: 0 auto;
+        grid-template-areas:     
+        "text"
+        "img";
+    }
+
+    .abs_mock_img{
+        position: absolute;
+        top: 100px;
+        left: 150px;
+    }
+
+    .grid1{
+        grid-area: start;
+    }
+
+    .grid2{
+        grid-area: end;
+    }
+
+    .grid3{
+        grid-area: text;
+    }
+
+    #initial-content{
+        display: flex;
+        padding-right: 5%;
+    }
+
+    #neon{
+        width: auto;
+        top: -1300px;
+        left: -1000px;
+    }
+}
+
 
 /* Who is */
 #who-is {
@@ -187,8 +280,6 @@ img {
     z-index: 2; 
 }
 
-/* overflow-x: hidden; */
-
 .glow,
 .glow2 {
     position: absolute;
@@ -209,6 +300,22 @@ img {
     left: 60%;
     background: linear-gradient(45deg, #FF1493, #FF6347, #00FF7F);
     animation: glowAnimation2 5s ease-in-out infinite;
+}
+
+@media (min-width: 768px){
+    #who-is{
+        display: flex;
+        background-image: url('../media/raissa-who-is-desktop.png');        
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 6rem 10%;
+    }
+
+    #who_img{
+        transform: scale(1.4);
+    }
+
+    
 }
 
 /* Animation */
@@ -257,3 +364,18 @@ img {
             0 0 105px 125px #9400D3;
     }
 }
+
+#elementEl::after {
+    content: '|';
+    margin-left: 5px;
+    animation: blink 0.7s;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

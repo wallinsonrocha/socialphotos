@@ -18,16 +18,16 @@
         <div id="home">
             <img id="neon" src="assets/media/neon.png" alt="">
             <div id="initial-content">
-                <img src="assets/media/raissa-triangle.png" alt="">
+                <img class="appear" src="assets/media/raissa-triangle.png" alt="">
                 <div class="content">
-                    <h1 id="logo">
+                    <h1 class="appear2" id="logo">
                         <span>SOCIAL</span>
                         <span>PHOTOS</span>
                     </h1>
-                    <p class="small-font">
+                    <p class="small-font appear2">
                         Transforme seu Instagram em uma galeria de harmonia visual com o poder das fotos profissionais!
                     </p>
-                    <p>
+                    <p class="appear3" id="elementEl">
                         Descubra o segredo para cativar corações, atrair olhares e contar sua história de forma
                         deslumbrante.
                         Junte-se a nós e aprenda a arte de criar um feed que não apenas encanta os sentidos, mas também
@@ -41,51 +41,53 @@
             </div>
         </div>
         <!-- Learning -->
-        <section class="container">
+        <div id="learning">
             <h1 class="text-center">DESLUMBRE, INSPIRE E CONQUISTE</h1>
-            <article class="card" style="--clr:#009688;">
-                <div class="imgBx">
-                    <img src="assets/media/ep_reading-lamp.svg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Aprenda a dominar a luz e a sombra</h3>
-                    <p>Nossos especialistas irão revelar os segredos por trás da captura de luz perfeita e sombras
-                        sutis,
-                        transformando suas fotos com um jogo de contrastes que cria profundidade e drama.
-                    </p>
-                </div>
-            </article>
-
-            <article class="card" style="--clr:#009688;">
-                <div class="imgBx">
-                    <img src="assets/media/mdi_mirror.svg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Estilo que reflete sua essência</h3>
-                    <p>
-                        Descubra como criar um estilo visual único que representa sua personalidade e história. Desde
-                        composição até paleta de cores, você se destacará entre a multidão.
-                    </p>
-                </div>
-            </article>
-
-            <article class="card" style="--clr:#009688;">
-                <div class="imgBx">
-                    <img src="assets/media/material-symbols_edit-outline.svg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Edição profissional descomplicada</h3>
-                    <p>
-                        Desvende as ferramentas e técnicas dos profissionais para editar suas fotos de maneira
-                        sofisticada, elevando o apelo estético de suas imagens a um nível totalmente novo.
-                    </p>
-                </div>
-            </article>
-        </section>
+            <section class="container">
+                <article class="card revealCard" style="--clr:#009688;">
+                    <div class="imgBx">
+                        <img src="assets/media/ep_reading-lamp.svg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Aprenda a dominar a luz e a sombra</h3>
+                        <p>Nossos especialistas irão revelar os segredos por trás da captura de luz perfeita e sombras
+                            sutis,
+                            transformando suas fotos com um jogo de contrastes que cria profundidade e drama.
+                        </p>
+                    </div>
+                </article>
+    
+                <article class="card revealCard" style="--clr:#009688;">
+                    <div class="imgBx">
+                        <img src="assets/media/mdi_mirror.svg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Estilo que reflete sua essência</h3>
+                        <p>
+                            Descubra como criar um estilo visual único que representa sua personalidade e história. Desde
+                            composição até paleta de cores, você se destacará entre a multidão.
+                        </p>
+                    </div>
+                </article>
+    
+                <article class="card revealCard" style="--clr:#009688;">
+                    <div class="imgBx">
+                        <img src="assets/media/material-symbols_edit-outline.svg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Edição profissional descomplicada</h3>
+                        <p>
+                            Desvende as ferramentas e técnicas dos profissionais para editar suas fotos de maneira
+                            sofisticada, elevando o apelo estético de suas imagens a um nível totalmente novo.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </div>
         <!-- Mockup viwes -->
         <div id="mockups">
             <div class="mockups__content">
-                <div class="content">
+                <div class="content grid1">
                     <h1 class="text-center">PRIMEIRAS VISTAS</h1>
                     <p>Seu feed desempenha o papel crucial de ser a porta de entrada para o seu mundo no Instagram. Ao
                         investir em um feed bem elaborado, você tem o poder de causar uma primeira impressão memorável e
@@ -94,8 +96,8 @@
                         explorar mais sobre você, sua história e o que você tem a oferecer.
                     </p>
                 </div>
-                <img src="assets/media/view-cellphone1.png" alt="">
-                <div class="content">
+                <img class="appear4 abs_mock_img" src="assets/media/view-cellphone1.png" alt="">
+                <div class="content grid2">
                     <h1 class="text-center">MARCA PODEROSA</h1>
                     <p>
                         Nos confins da era digital, a construção de uma marca sólida começa com um feed coeso e
@@ -106,13 +108,15 @@
                     </p>
                 </div>
             </div>
-            <div class="mockups__content">
-                <img class="fit_img" src="assets/media/view-cellphone2.png" alt="">
-                <div class="content">
+            <div class="mockups__content2">
+                <img class="fit_img appear4" src="assets/media/view-cellphone2.png" alt="">
+                <div class="content grid3">
                     <h1 class="text-center">MAESTRIA</h1>
-                    <p>Em meio ao oceano de conteúdo nas redes sociais, a verdadeira diferença emerge nos detalhes. Um feed
+                    <p>Em meio ao oceano de conteúdo nas redes sociais, a verdadeira diferença emerge nos detalhes. Um
+                        feed
                         bem orquestrado é mais do que apenas agradável aos olhos; ele é magnético. Ele atrai, engaja e
-                        mantém sua audiência voltando para mais. Ao apresentar um feed que não apenas mantém uma qualidade
+                        mantém sua audiência voltando para mais. Ao apresentar um feed que não apenas mantém uma
+                        qualidade
                         excepcional, mas também mantém uma coesão narrativa, você solidifica sua presença como uma
                         referência na plataforma, destacando-se entre a multidão com autenticidade e estilo.</p>
                 </div>
@@ -125,7 +129,7 @@
         </div>
 
         <!-- Who is -->
-        <div id="who-is">            
+        <div id="who-is">
             <div id="who_img">
                 <img class="fit_img2" src="assets/media/raissa.png" alt="">
                 <div>
@@ -138,9 +142,11 @@
                     <span>Olá!</span>
                     <div>Sou <span>RAISSA</span></div>
                 </h1>
-                <p>Com uma trajetória consolidada ao longo de muitos anos no mercado, compreendi profundamente a vitalidade
+                <p>Com uma trajetória consolidada ao longo de muitos anos no mercado, compreendi profundamente a
+                    vitalidade
                     de
-                    um feed harmonioso para o sucesso de qualquer empresa. A partir dessa compreensão, trilhei o caminho da
+                    um feed harmonioso para o sucesso de qualquer empresa. A partir dessa compreensão, trilhei o caminho
+                    da
                     especialização a fim de aprimorar ainda mais minha expertise. Agora, estou empenhada em compartilhar
                     esses
                     conhecimentos valiosos com aqueles verdadeiramente interessados em alcançar excelência estética e
@@ -152,6 +158,76 @@
             </div>
         </div>
     </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        let cardChoice = 0;
+        function mobileCardHeight() {
+            let card = document.querySelectorAll('.card');
+
+            let imgBx = card[cardChoice].querySelector('.imgBx');
+            let content = card[cardChoice].querySelector('.content');
+
+            content.style.top = "130px";
+            content.style.height = "250px";
+            card[cardChoice].style.height = "400px";
+            imgBx.style.top = "-100px";
+            imgBx.style.transform = "scale(0.75)";
+
+            cardChoice += 1;
+        }
+
+        let slideUp = {
+            distance: '10%',
+            origin: 'top',
+            duration: '1000',
+        };
+
+        let slideUp2 = {
+            distance: '10%',
+            delay: 500,
+            origin: 'top',
+            duration: '1000',
+        };
+
+        let slideUp3 = {
+            opacity: null,
+            delay: '1000',
+        };
+
+        let slideUp4 = {
+            viewFactor: 0.4,
+            distance: '10%',
+            delay: 500,
+            origin: 'top',
+            duration: '1000',
+        }
+
+        let revealCard = {
+            viewFactor: 1,
+            opacity: 1,
+            afterReveal: mobileCardHeight,
+        }
+
+        window.sr = ScrollReveal();
+        sr.reveal('.appear', slideUp);
+        sr.reveal('.appear2', slideUp2);
+        sr.reveal('.appear3', slideUp3);
+        sr.reveal('.appear4', slideUp4);
+        sr.reveal('.revealCard', revealCard);
+    </script>
+    <script>
+        function typeWriter(el) {
+            const textArray = el.innerHTML.split('');
+            el.innerHTML = '';
+            setTimeout(() => {
+                textArray.forEach((letter, i) =>
+                    setTimeout(() => (el.innerHTML += letter), 15 * i)
+                );
+            }, 1000);
+        }
+
+        typeWriter(elementEl);
+    </script>
 </body>
 
 </html>
